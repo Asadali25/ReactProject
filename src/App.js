@@ -1,8 +1,9 @@
+import Body from '../src/components/body'
 
 function App() {
   return (
-    <div className="my-8 text-3xl">
-     Hiiiii
+    <div className="">
+     <Body/>
     </div>
   );
 }
