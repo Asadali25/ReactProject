@@ -10,14 +10,18 @@ const mainMovie = nowPlayingMoviesList[0];
 const {original_title ,overview ,id} = mainMovie
 
   return (
-    <div>
+    <div className=''>
         <VideoTitle 
         title ={original_title}
         overview={overview}
         />
+        <div>
         <VideoBackground 
-        movieId ={id}
+        movieId ={id} 
         />
+
+        </div>
+        
     </div>
   )
 }

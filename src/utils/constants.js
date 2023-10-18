@@ -13,3 +13,23 @@ export const API_OPTIONS = {
   };
 
 export const TMDB_IMG_URL ="https://image.tmdb.org/t/p/w500/";
+
+export const SUPPORTED_LANGUAGES =[
+{
+  idendifier:"en",
+  name:'English'
+},
+{
+  idendifier:"hi",
+  name:'Hindi'
+},
+{
+  idendifier:"Te",
+  name:'Telugu'
+},
+{
+  idendifier:"nl",
+  name:'Dutch'
+}
+
+]
