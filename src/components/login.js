@@ -3,14 +3,14 @@ import { validateForm} from '../utils/validate'
 import Header from './header';
 import {  createUserWithEmailAndPassword ,signInWithEmailAndPassword ,updateProfile} from "firebase/auth";
 import { auth } from '../utils/firebase';
-import { useNavigate } from 'react-router-dom';
 import { addUser } from '../utils/userSlice';
 import { useDispatch } from 'react-redux';
+import { NETFLIX_BG_IMG ,PROFILE_IMG} from '../utils/constants';
 const Login = () => {
     const [isSignIn ,setIsSignIn] = useState(true);
     const [errorMessage , setErrorMessage] = useState('');
     const dispatch = useDispatch();
-    const navigate = useNavigate();
+
     const name =useRef(null);
     const email =useRef(null);
     const password =useRef(null);
@@ -18,7 +18,6 @@ const Login = () => {
         setIsSignIn(!isSignIn);
     }
     const handleSubmitForm =()=>{
-        // console.log(email?.current?.value, password.current.value)
       const validate=  validateForm(email?.current?.value, password.current.value);
    setErrorMessage(validate)
       if(errorMessage) return;
@@ -27,12 +26,11 @@ const Login = () => {
         .then((userCredential) => {
           // Signed up 
           const user = userCredential.user;
-          console.log(user)
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://media.licdn.com/dms/image/C4D03AQGmUvSSYd_E1w/profile-displayphoto-shrink_200_200/0/1661763775986?e=1703116800&v=beta&t=Jo5p1OxcB-72Pc2-rTVC15HeTit3qkyRnA5flBv2JX8"
+            photoURL: PROFILE_IMG
           }).then(() => {
-          navigate("/browse");
+
           dispatch(addUser({
             uid:auth.currentUser.uid,
             displayName:auth.currentUser.displayName,
@@ -53,15 +51,11 @@ const Login = () => {
           // ..
         });
       }else{
-        console.log('hi')
         signInWithEmailAndPassword(auth, email?.current?.value, password.current.value)
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
     
-    navigate("/browse")
-
-    console.log(user , 'helloooo')
     // ...
   })
   .catch((error) => {
@@ -77,7 +71,7 @@ const Login = () => {
     <div>
         <Header/>
 <div className="absolute">  
-<img src="https://assets.nflxext.com/ffe/siteui/vlv3/ab180a27-b661-44d7-a6d9-940cb32f2f4a/7fb62e44-31fd-4e1f-b6ad-0b5c8c2a20ef/IN-en-20231009-popsignuptwoweeks-perspective_alpha_website_large.jpg"/>
+<img src={NETFLIX_BG_IMG}/>
 
 </div>
         
