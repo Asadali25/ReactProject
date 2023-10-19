@@ -5,7 +5,7 @@ const   MovieCard = (movie) => {
 
   return (
     <div className='w-40 pr-3 cursor-pointer'>
-      <img   src={`${TMDB_IMG_URL+movie?.movie?.poster_path}`} />
+     {movie?.movie?.poster_path && <img   src={`${TMDB_IMG_URL+movie?.movie?.poster_path}`} />}
     </div>
   )
 }

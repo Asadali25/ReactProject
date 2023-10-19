@@ -1,8 +1,20 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+import MoviesList from './MoviesList'
 
 const GptSuggestions = () => {
+  const moviesByPersonList = useSelector((store)=> store?.movies?.moviesByPersonList)
   return (
-    <div>GptSuggestions</div>
+    <div>
+       {moviesByPersonList && moviesByPersonList?.map ((movie)=>(
+          
+            <MoviesList  
+            title = {movie?.known_for_department}
+            moviesList= {movie?.known_for}
+            />
+        
+        ))}
+    </div>
   )
 }
 
