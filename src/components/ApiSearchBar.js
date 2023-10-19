@@ -4,6 +4,7 @@ import { lan } from '../utils/languageConstants';
 import { API_OPTIONS } from '../utils/constants';
 import { addMoviesByPerson, clearMoviesByPerson } from '../utils/movieSlice';
 import ShimmerUI from './ShimmerUI';
+import ApiSuggestions from './ApiSuggestions';
 
 const ApiSearchBar = () => {
   const [inputvalue ,setInputVal] = useState('');
@@ -53,7 +54,7 @@ const ApiSearchBar = () => {
             
         </form>
         {isShimmer}
-        <apiSuggestions />
+        <ApiSuggestions />
         
        { noData &&
       <div className='text-white text-lg flex justify-center  my-5'> 
