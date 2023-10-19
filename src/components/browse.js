@@ -22,9 +22,10 @@ const Browse = () => {
 
   return (
     <div>
+            <Header />
     {showapiSearch &&<ApiSearch />}
     {!showapiSearch &&<>
-      <Header />
+
 
     <Maincontainer/>
     <SecondaryContainer/>
