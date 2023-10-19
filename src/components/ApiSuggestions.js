@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import MoviesList from './MoviesList'
 
-const GptSuggestions = () => {
+const ApiSuggestions = () => {
   const moviesByPersonList = useSelector((store)=> store?.movies?.moviesByPersonList)
   return (
     <div>
@@ -18,4 +18,4 @@ const GptSuggestions = () => {
   )
 }
 
-export default GptSuggestions
+export default ApiSuggestions

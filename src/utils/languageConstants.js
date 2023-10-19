@@ -1,19 +1,19 @@
 export const lan ={
 English:{
     search:'Search',
-    gptInputPlaceholder:'What would you like to watch today ?'
+    apiInputPlaceholder:'Search By Person !'
 },
 Hindi:{
     search:'खोज',
-    gptInputPlaceholder:'आज आप क्या देखना चाहेंगे?'
+    apiInputPlaceholder:'व्यक्ति द्वारा खोजें !'
 },
 Telugu:{
     search:'వెతకండి',
-    gptInputPlaceholder:'మీరు ఈరోజు ఏమి చూడాలనుకుంటున్నారు?'
+    apiInputPlaceholder:'వ్యక్తి ద్వారా శోధించండి!'
 },
 Dutch:{
     search:'Zoekopdracht',
-    gptInputPlaceholder:'Wat zou jij vandaag graag willen zien?'
+    apiInputPlaceholder:'Zoek op persoon!'
 }
 
 }
