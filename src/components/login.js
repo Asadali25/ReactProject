@@ -5,8 +5,9 @@ import {  createUserWithEmailAndPassword ,signInWithEmailAndPassword ,updateProf
 import { auth } from '../utils/firebase';
 import { addUser } from '../utils/userSlice';
 import { useDispatch } from 'react-redux';
-import { NETFLIX_BG_IMG ,PROFILE_IMG} from '../utils/constants';
-const Login = () => {
+import { NETFLIX_BG_IMG } from '../utils/constants';
+import PROFILE_IMG from '../assets/netflix-yellow image.jpeg'
+ const Login = () => {
     const [isSignIn ,setIsSignIn] = useState(true);
     const [errorMessage , setErrorMessage] = useState('');
     const dispatch = useDispatch();
