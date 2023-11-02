@@ -16,7 +16,7 @@ const useTopRatedmovies = () => {
     }
     
     useEffect(()=>{
-     !topRatedMovies && getTopRatedMovies()
+     !topRatedMovies && getTopRatedMovies()&&console.log(topRatedMovies ,'topRatedMovies')
     },[])
   
 }
