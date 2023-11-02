@@ -1,79 +1,41 @@
-# Getting Started with Create React App
+# React Netflix Clone App
+This is a web app developed using React Js. It allows users to login and the app fetches list of movies using TMDB API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Features
+- The App allows the user to sign up.
+- The App Allows the user to sign in.
+- The app  displays the trailer of the firts movie from the now playing list.
+- The app displays the now playing movies list,top rated movies list ,popular movies list & upcoming movies.
+- Users can search for person (Hero/Heroin/director/produce etc).
 
 
-#features
----> HEADER 
-browse
-movier
-...> trailer in background
-...>TITLE & INFORMATION 
-MOVIES SUGGESTIONS MOVIES LISTS
+# Technologies & Tools Used
+- React Js
+- HTML
+- TailwindCSS
+- JavaScript
+- VS Code
+- TMDB Api
+- Netlify
+- Redux-toolkit
+- React-Hooks
+
+# Installation and Usage
+To use this app, you can follow these steps:
+
+- Clone the repository or download the source code.
+- Open the project in your preferred code editor.
+- Run  `npm install` to install the necessary dependencies.
+- Run `npm run start` to start the development server.
+- Open your browser and navigate to `http://localhost:3000/` to use the app.
+
+To use the app, simply sign up with any gmail / test email .After sign up , enter same credentials to sign in.
+ The app will display list of movies as per TMDB Api and also you can navigate to API search page to search by person.In API search page translation is
+ handled for 2 or 3 languages.
+
+# Demo
+A live demo of the React Js Netflix clone app is available at [Saida React Js netflix clone App](https://saida-react-netflix.netlify.app/browse).
+
+
+# License
+This project is licensed under the MIT license.
