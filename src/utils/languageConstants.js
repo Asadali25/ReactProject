@@ -11,9 +11,5 @@ Telugu:{
     search:'వెతకండి',
     apiInputPlaceholder:'వ్యక్తి ద్వారా శోధించండి!'
 },
-Dutch:{
-    search:'Zoekopdracht',
-    apiInputPlaceholder:'Zoek op persoon!'
-}
 
 }
