@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ReactProject/static/css/main.64d362bb.css",
+    "main.js": "/ReactProject/static/js/main.d978ea34.js",
+    "static/js/787.4f4a6f0f.chunk.js": "/ReactProject/static/js/787.4f4a6f0f.chunk.js",
+    "static/media/netflix-yellow image.jpeg": "/ReactProject/static/media/netflix-yellow image.d005c9b7e2a4680ccbc1.jpeg",
+    "index.html": "/ReactProject/index.html",
+    "main.64d362bb.css.map": "/ReactProject/static/css/main.64d362bb.css.map",
+    "main.d978ea34.js.map": "/ReactProject/static/js/main.d978ea34.js.map",
+    "787.4f4a6f0f.chunk.js.map": "/ReactProject/static/js/787.4f4a6f0f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64d362bb.css",
+    "static/js/main.d978ea34.js"
+  ]
+}
